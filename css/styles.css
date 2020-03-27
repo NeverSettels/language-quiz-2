@@ -51,29 +51,63 @@ body {
   justify-content: space-around;
   transition: all 3s linear;
 }
-.question input[type='radio'] {
-  opacity: 0;
-  position: fixed;
-  width: 0;
+
+@keyframes button-colors {
+  from {
+    border: 3px #f3ea5f solid;
+    color: #2bd1fc;
+  }
+  25% {
+    border: 3px #a3f085 solid;
+    color: #a3f085;
+  }
+  50% {
+    border: 3px #2bd1fc solid;
+    color: #f3ea5f;
+  }
+  75% {
+    border: 3px #a3f085 solid;
+    color: #a3f085;
+  }
+  to {
+    border: 3px #f3ea5f solid;
+    color: #2bd1fc;
+  }
 }
-.question label {
-  display: inline-block;
-  background-color: #ddd;
-  padding: 10px 20px;
-  font-family: sans-serif, Arial;
-  font-size: 16px;
-  border: 2px solid #444;
+@keyframes button-hover {
+  from {
+    border: 3px #ff3f3f solid;
+    color: #33658a;
+  }
+  25% {
+    border: 3px #a756aa solid;
+    color: #a756aa;
+  }
+  50% {
+    border: 3px #33658a solid;
+    color: #ff3f3f;
+  }
+  75% {
+    border: 3px #a756aa solid;
+    color: #a756aa;
+  }
+  to {
+    border: 3px #ff3f3f solid;
+    color: #33658a;
+  }
+}
+
+.better-btn {
+  background-color: transparent;
+  animation: button-colors 5s linear infinite;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
+  transition: all linear 0.25s;
 }
-.question input[type='radio']:checked + label {
-  background-color: #bfb;
-  border-color: #4c4;
-}
-.question input[type='radio']:focus + label {
-  border: 2px dashed #444;
-}
-.radio-toolbar label:hover {
-  background-color: #dfd;
+.better-btn:hover {
+  background-color: #100007;
+  animation: button-hover 5s linear infinite;
+  transform: scale(1.1);
 }
 .no-show {
   display: none;
