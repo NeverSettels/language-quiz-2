@@ -8,9 +8,7 @@ $(document).ready(function() {
     })
   }
   $('#reload').click(function() {
-    $('.transition').html(
-      `<img src="https://media3.giphy.com/media/vVwVQkKf483T2/giphy.gif?cid=ecf05e47fe67d824b7a84431ca3fcfa93599b6ce769d5b7f&rid=giphy.gif" alt="hi">`
-    )
+    $('.transition').html(``)
     $('.transition').addClass('animate')
     setTimeout(function() {
       location.reload()
