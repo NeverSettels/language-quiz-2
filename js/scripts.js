@@ -41,6 +41,7 @@ $(document).ready(function() {
         binary.score += -10
         scss.score += 10
         css.score += 5
+        js.score += 2
       } else if (design === 'indiferent') {
         scss.score += 5
         css.score += 10
@@ -52,6 +53,29 @@ $(document).ready(function() {
         js.score += -2
         cs.score += 5
         binary.score += 10
+      } else if (logic === 'indiferent') {
+        js.score += 5
+        cs.score += -2
+        binary.score += -5
+      } else if (logic === 'dlike') {
+        js.score += 10
+        cs.score += -5
+        binary.score += -10
+      } else if (games === 'like') {
+        js.score += 5
+        cs.score += 10
+        python.score += -2
+        binary.score += -10
+      } else if (games === 'indiferent') {
+        js.score += 10
+        cs.score += 5
+        python.score += 5
+        binary.score += -5
+      } else if (games === 'dlike') {
+        js.score += 5
+        cs.score += -2
+        python.score += 10
+        binary.score += 2
       }
     }
     langArr.sort((a, b) => b.score - a.score)
