@@ -28,7 +28,11 @@ $(document).ready(function() {
     if (programming === 'no') {
       message = "If you dont really like proggraming then the order won't matter!"
     } else {
-      console.log('you shouldnt be here')
+      if (generation === 'boom') {
+        binary.score += 10
+      } else {
+        console.log('not testing here yet')
+      }
     }
 
     langArr.sort((a, b) => b.score - a.score)
