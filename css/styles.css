@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #231123;
+  background-color: #ff48c4;
   color: aliceblue;
 }
 .result-item {
@@ -105,6 +105,15 @@ body {
   background-image: linear-gradient(to left top, #f3ea5f, #a3f085, #4cecb9, #00e1e5, #2bd1fc);
   color: #231123;
   border: 3px transparent solid;
+}
+.transition {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #231123;
+  color: aliceblue;
 }
 .no-show {
   display: none;

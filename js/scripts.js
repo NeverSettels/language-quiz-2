@@ -8,7 +8,10 @@ $(document).ready(function() {
     })
   }
   $('#reload').click(function() {
-    location.reload()
+    $('.transition').html('')
+    setTimeout(function() {
+      location.reload()
+    }, 3000)
   })
   $('#quiz-form').submit(function(event) {
     event.preventDefault()
