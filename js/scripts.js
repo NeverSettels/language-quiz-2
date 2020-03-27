@@ -81,7 +81,7 @@ $(document).ready(function() {
     langArr.sort((a, b) => b.score - a.score)
     $('#message').text(message)
     langArr.forEach(language => {
-      $('#results-list').append(`<ol>${language.name}</ol>`)
+      $('#results-list').append(`<li class="result-item">${language.name}</li>`)
     })
 
     $('#q5').addClass('no-show')

@@ -5,7 +5,9 @@ body {
   align-items: center;
   background-color: #231123;
 }
-
+.result-item {
+  list-style-type: upper-alpha;
+}
 .header-wrap {
   background-image: radial-gradient(circle, #f3ea5f, #a3f085, #4cecb9, #00e1e5, #2bd1fc);
   background-clip: text;
@@ -35,7 +37,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  transition: all 3s linear;
 }
 .no-show {
   display: none;
+  transition: all 3s linear;
 }
