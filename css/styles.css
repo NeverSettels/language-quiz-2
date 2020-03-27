@@ -7,7 +7,18 @@ body {
   color: aliceblue;
 }
 .result-item {
-  list-style-type: lower-latin;
+  counter-increment: li;
+  font-size: 2rem;
+}
+.result-item::before {
+  content: counter(li);
+  color: #ff48c4;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  text-align: right;
+  direction: rtl;
 }
 .gradient-wrap {
   background-image: radial-gradient(circle, #f3ea5f, #a3f085, #4cecb9, #00e1e5, #2bd1fc);
@@ -18,7 +29,7 @@ body {
 .border-wrap {
   background-image: linear-gradient(to left top, #f3ea5f, #a3f085, #4cecb9, #00e1e5, #2bd1fc);
   width: 80vw;
-  height: 60vh;
+  height: 80vh;
   padding: 5px;
   display: flex;
   flex-direction: column;
