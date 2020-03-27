@@ -6,8 +6,10 @@
 
 ## **Description**
 
-_A quiz to help programers new and old try to figure out which language to learn next_ _**NOTE:**_ This site has zero
-basis in anything, if you're really considerng a new language consider an article like
+_A quiz to help programers new and old try to figure out which language to learn next make sure to have your sound on
+for the full expirience_
+
+_**NOTE:**_ This site has zero basis in anything, if you're really considerng a new language consider an article like
 [this](https://hackr.io/blog/best-programming-languages-to-learn-2020-jobs-future) to make a more informed choice!
 
 ## **Setup/Installation**
@@ -45,6 +47,10 @@ If you have any questions, comments, or concerns, feel free to contact the conte
 - jQuery
 
 - GitBash
+
+## **Other resources**
+
+- [Freesound.org](https://freesound.org/) was used for the sound effects
 
 ## **License**
 
