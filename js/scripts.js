@@ -7,7 +7,9 @@ $(document).ready(function() {
       $(`#q${i}`).removeClass('no-show')
     })
   }
-
+  $('#reload').click(function() {
+    location.reload()
+  })
   $('#quiz-form').submit(function(event) {
     event.preventDefault()
     let css = { name: 'CSS', score: 0 }
