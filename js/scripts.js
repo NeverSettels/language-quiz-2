@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  const squish = new Audio('https://freesound.org/data/previews/271/271666_5158123-lq.mp3')
+  $('button').click(function() {
+    squish.play()
+  })
   $('#start').click(function() {
     $('#start').addClass('explode')
     setTimeout(function() {
@@ -39,7 +43,7 @@ $(document).ready(function() {
     const programming = $("input[name='programming']:checked").val()
 
     if (programming === 'no') {
-      message = "If you dont really like proggraming then the order won't matter!"
+      message = "If you don't really like programing then the order won't matter!"
     } else {
       if (generation === 'boom') {
         binary.score += 10
