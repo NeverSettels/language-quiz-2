@@ -148,11 +148,11 @@ body {
 }
 .animate {
   background-image: none;
-  animation: star-out 5s linear;
+  animation: star-out 7s linear;
 }
 @keyframes explode {
   to {
-    transform: scale(100);
+    transform: scale(5) rotate(900deg) translate(0, -300px);
   }
 }
 .explode {

@@ -1,9 +1,13 @@
 $(document).ready(function() {
-  const squish = new Audio('https://freesound.org/data/previews/271/271666_5158123-lq.mp3')
+  const thunder = new Audio('https://freesound.org/data/previews/195/195439_3634316-lq.mp3')
+  const woosh = new Audio('https://freesound.org/data/previews/489/489895_10418401-lq.mp3')
+  const pip = new Audio('https://freesound.org/data/previews/218/218043_1676145-lq.mp3')
   $('button').click(function() {
-    squish.play()
+    pip.play()
   })
   $('#start').click(function() {
+    pip.pause()
+    thunder.play()
     $('#start').addClass('explode')
     setTimeout(function() {
       $('#start').addClass('no-show')
@@ -21,9 +25,10 @@ $(document).ready(function() {
   $('#reload').click(function() {
     $('.transition').html(``)
     $('.transition').addClass('animate')
+    woosh.play()
     setTimeout(function() {
       location.reload()
-    }, 5000)
+    }, 7000)
   })
   $('#quiz-form').submit(function(event) {
     event.preventDefault()
