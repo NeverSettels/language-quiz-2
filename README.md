@@ -45,6 +45,10 @@ _**NOTE:**_ This site has zero basis in anything, if you're really considerng a 
 
 or check it out [Here](https://neversettels.github.io/language-quiz-2/)
 
+## **To do**
+
+- Make responsive
+
 ## **Known Bugs**
 
 1. Start button animation goes wild sometimes
