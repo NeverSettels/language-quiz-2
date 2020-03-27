@@ -4,11 +4,12 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #231123;
+  color: aliceblue;
 }
 .result-item {
-  list-style-type: upper-alpha;
+  list-style-type: lower-latin;
 }
-.header-wrap {
+.gradient-wrap {
   background-image: radial-gradient(circle, #f3ea5f, #a3f085, #4cecb9, #00e1e5, #2bd1fc);
   background-clip: text;
   -webkit-background-clip: text;
