@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  $('#start').click(function() {
+    $('#start').addClass('explode')
+    setTimeout(function() {
+      $('#start').addClass('no-show')
+      $('.transition').removeClass('no-show')
+    }, 5000)
+  })
   //attach cycling event listeners
   for (let i = 2; i <= 5; i++) {
     $(`#toQ${i}`).click(function(event) {
