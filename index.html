@@ -9,5 +9,44 @@
     <script src="js/scripts.js"></script>
     <title>Web page picker quiz</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Language Quiz</h1>
+    <h3>Find which coding language you should explore next</h3>
+    <div>
+      <form id="quiz-form">
+        <div id="q1">
+          <h4>What generation are you from?</h4>
+          <label><input type="radio" name="generation" id="generationOption1" value="like" />Boomer </label>
+          <label><input type="radio" name="generation" id="generationOption2" value="indiferent" />Millenial</label>
+          <label><input type="radio" name="generation" id="generationOption3" value="dlike" />Z</label>
+        </div>
+        <div id="q2">
+          <h4>How much do you like visually designing things?</h4>
+          <label><input type="radio" name="design" id="designOption1" value="like" />Like </label>
+          <label><input type="radio" name="design" id="designOption2" value="indiferent" />Indifferent</label>
+          <label><input type="radio" name="design" id="designOption3" value="dlike" />Dislike</label>
+        </div>
+        <div id="q3">
+          <h4>Do you like stricter logic?</h4>
+          <label><input type="radio" name="logic" id="logicOption1" value="like" />Like </label>
+          <label><input type="radio" name="logic" id="logicOption2" value="indiferent" />Indifferent</label>
+          <label><input type="radio" name="logic" id="logicOption3" value="dlike" />Dislike</label>
+        </div>
+        <div id="q4">
+          <h4>Do you like the idea of making games?</h4>
+          <label><input type="radio" name="games" id="gamesOption1" value="like" />Like </label>
+          <label><input type="radio" name="games" id="gamesOption2" value="indiferent" />Indifferent</label>
+          <label><input type="radio" name="games" id="gamesOption3" value="dlike" />Dislike</label>
+        </div>
+        <div id="q5">
+          <h4>Do you even like programming?</h4>
+          <label><input type="radio" name="games" id="gamesOption1" value="yes" />Yes!</label>
+          <label
+            ><input type="radio" name="games" id="gamesOption2" value="no" />I'm not sure how I ended up here</label
+          >
+        </div>
+        <button type="submit" class="btn btn-info">lets see</button>
+      </form>
+    </div>
+  </body>
 </html>
