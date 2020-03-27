@@ -10,6 +10,15 @@ $(document).ready(function() {
 
   $('#quiz-form').submit(function(event) {
     event.preventDefault()
-    console.log('Last button click only?')
+    let cssScore = 0
+    let scssScore = 0
+    let jsScore = 0
+    let csScore = 0
+    let pythoScore = 0
+    const generation = $("input[name='generation']:checked").val()
+    const design = $("input[name='design']:checked").val()
+    const logic = $("input[name='logic']:checked").val()
+    const games = $("input[name='games']:checked").val()
+    const programming = $("input[name='programming']:checked").val()
   })
 })
