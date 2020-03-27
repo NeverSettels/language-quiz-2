@@ -76,24 +76,19 @@ body {
 }
 @keyframes button-hover {
   from {
-    border: 3px #ff3f3f solid;
-    color: #33658a;
+    background-color: #f3ea5f;
   }
   25% {
-    border: 3px #a756aa solid;
-    color: #a756aa;
+    background-color: #a3f085;
   }
   50% {
-    border: 3px #33658a solid;
-    color: #ff3f3f;
+    background-color: #2bd1fc;
   }
   75% {
-    border: 3px #a756aa solid;
-    color: #a756aa;
+    background-color: #a3f085;
   }
   to {
-    border: 3px #ff3f3f solid;
-    color: #33658a;
+    background-color: #f3ea5f;
   }
 }
 
@@ -102,12 +97,14 @@ body {
   animation: button-colors 5s linear infinite;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: all linear 0.25s;
+  font-weight: bolder;
+  transition: all linear 1s;
 }
 .better-btn:hover {
-  background-color: #100007;
-  animation: button-hover 5s linear infinite;
-  transform: scale(1.1);
+  animation: none;
+  background-image: linear-gradient(to left top, #f3ea5f, #a3f085, #4cecb9, #00e1e5, #2bd1fc);
+  color: #231123;
+  border: 3px transparent solid;
 }
 .no-show {
   display: none;
