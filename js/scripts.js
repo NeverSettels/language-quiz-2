@@ -9,9 +9,10 @@ $(document).ready(function() {
   }
   $('#reload').click(function() {
     $('.transition').html('')
+    $('.transition').addClass('animate')
     setTimeout(function() {
       location.reload()
-    }, 3000)
+    }, 5000)
   })
   $('#quiz-form').submit(function(event) {
     event.preventDefault()

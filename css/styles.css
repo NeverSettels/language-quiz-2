@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ff48c4;
+  background-color: #231123;
   color: aliceblue;
 }
 .result-item {
@@ -115,6 +115,31 @@ body {
   background-color: #231123;
   color: aliceblue;
 }
+
+@keyframes star-out {
+  from {
+    clip-path: polygon(50% 0%, 100% 3%, 98% 35%, 99% 71%, 97% 98%, 50% 100%, 0 99%, 0 76%, 2% 35%, 1% 2%);
+    background-color: #f3ea5f;
+  }
+  25% {
+    clip-path: polygon(50% 0%, 85% 11%, 98% 35%, 94% 66%, 79% 91%, 49% 96%, 21% 91%, 8% 69%, 2% 35%, 16% 10%);
+  }
+  50% {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: #a3f085;
+  }
+  75% {
+    clip-path: polygon(49% 21%, 58% 44%, 79% 37%, 59% 57%, 68% 76%, 49% 65%, 29% 78%, 40% 56%, 21% 38%, 42% 43%);
+  }
+  to {
+    clip-path: polygon(52% 53%, 53% 49%, 57% 51%, 59% 57%, 54% 61%, 49% 65%, 44% 58%, 40% 56%, 43% 54%, 46% 50%);
+    background-color: #2bd1fc;
+  }
+}
+.animate {
+  animation: star-out 5s linear;
+}
+
 .no-show {
   display: none;
   transition: all 3s linear;
