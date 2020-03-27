@@ -30,11 +30,30 @@ $(document).ready(function() {
     } else {
       if (generation === 'boom') {
         binary.score += 10
-      } else {
-        console.log('not testing here yet')
+      } else if (generation === 'mill') {
+        python.score += 10
+        cs.score += 5
+      } else if (generation === 'genZ') {
+        js.score += 10
+        python.score += 5
+        cs.score += 5
+      } else if (design === 'like') {
+        binary.score += -10
+        scss.score += 10
+        css.score += 5
+      } else if (design === 'indiferent') {
+        scss.score += 5
+        css.score += 10
+      } else if (design === 'dlike') {
+        scss.score += -2
+        css.score += -2
+        binary.score += 5
+      } else if (logic === 'like') {
+        js.score += -2
+        cs.score += 5
+        binary.score += 10
       }
     }
-
     langArr.sort((a, b) => b.score - a.score)
     $('#message').text(message)
     langArr.forEach(language => {
